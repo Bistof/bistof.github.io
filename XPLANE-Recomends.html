@@ -74,6 +74,17 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   75% { transform: rotate(0deg); }
+   80% { transform: rotate(10deg); }
+   90% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+span.wiggle {
+  display: inline-block;
+  animation: wiggle 2s infinite;
+}
 </style>
 <div class="navbar">
   <a href="https://bistof.github.io/XPLANE.html">Home</a>
@@ -84,7 +95,7 @@
     </button>
     <div class="dropdown-content">
       <a href="https://bistof.github.io/XPLANE-V-22%20Osprey.html">V-22 Osprey<span class="badge">In Progress</span></a>
-      <a href="https://bistof.github.io/XPLANE-Overture.html">Overture<span class="badge">New</span></a>
+      <a href="https://bistof.github.io/XPLANE-Overture.html">Overture<span class="badge wiggle">New</span></a>
       <a href="https://bistof.github.io/XPLANE-Concorde.html">Concorde</a>
       <a href="https://bistof.github.io/XPLANE-Airbus%20A380.html">Airbus A380</a>
     </div>
@@ -100,7 +111,7 @@
 <body>
   <h2>New⬇:</h2>
   <p><img width=80% src="https://djsaviation.net/wp-content/uploads/2023/07/home-hero.jpg"/>
-    <a href="XPLANE-Overture.html"><button>Overture</button></a><span class="badge">New</span>
+    <a href="XPLANE-Overture.html"><button>Overture</button></a><span class="badge wiggle">New</span>
     
     <p><h2>Aviation News:</h2></p>
     <p><embed><a href="https://www.flyingmag.com/this-1929-brunner-winkle-bird-model-a-is-a-golden-age-aircraftforsale-top-pick/" title="This 1929 Brunner-Winkle Bird Model A is a Golden Age ‘AircraftForSale’"><img src="https://flyingmag.sfo3.digitaloceanspaces.com/flyingma/wp-content/uploads/2023/11/24134037/bird.jpeg" width="100%" style="max-width: 850px;" alt="This 1929 Brunner-Winkle Bird Model A is a Golden Age ‘AircraftForSale’"></a><br>Provided by <a href="https://www.flyingmag.com/this-1929-brunner-winkle-bird-model-a-is-a-golden-age-aircraftforsale-top-pick/" target="_blank">FLYING</a>
