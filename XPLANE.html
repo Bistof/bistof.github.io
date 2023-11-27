@@ -75,6 +75,23 @@
   display: inline-block;
   animation: wiggle 2s infinite;
 }
+  .animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
 </style>
 <div class="navbar">
   <a href="https://bistof.github.io/XPLANE.html">Home</a>
@@ -91,12 +108,14 @@
     </div>
   </div>
 </div>
+    <div class="animate-bottom">
     <link rel='icon' href="X transparent.png">
    <a href="XPLANE.html">
     <img width=20% src="canvas__16_-removebg-preview.png" />
 </a>
 <h1>Home</h1>
     <title>XPLANE</title>
+    </div>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
@@ -113,6 +132,7 @@ body {
 </style>
   </head>
   <body>
+    <div class="animate-bottom">
     <p>The best website to find planes explained!</p>
     <p></p>
     <p><img width=20% src="XPLANE prototype.png"/></p>
@@ -131,5 +151,6 @@ body {
   <p>"Best place to find good info about planes."</p>
   <hr class="rounded">
 </div>
+    </div>
   </body>
 </html>
