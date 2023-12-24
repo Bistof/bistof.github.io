@@ -124,49 +124,6 @@
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 </style>
-
-    /*test
-    <script>
-      function postComment(event) {
-          event.preventDefault();
-
-          const comment = {
-            name: event.target.name.value,
-            text: event.target.comment.value,
-          };
-
-          fetch('/submit_comment', {
-            method: 'POST',
-            body: JSON.stringify(comment),
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          })
-          .then(() => {
-            event.target.reset();
-            createComment(comment);
-          })
-          .catch(console.error);
-      }
-
-      function createComment(comment) {
-          var commentBox = document.createElement('p');
-          commentBox.innerHTML = `${comment.name}: ${comment.text}`;
-          document.getElementById('commentSection').appendChild(commentBox);
-      }
-
-      window.onload = function() {
-        fetchComments();
-      }
-
-      function fetchComments() {
-          fetch('/comments')
-            .then(response => response.json())
-            .then(comments => comments.forEach(createComment))
-            .catch(console.error);
-      }
-    </script>
-    /*test
     
 <div class="navbar">
   <a href="https://bistof.github.io/XPLANE.html">Home</a>
@@ -226,23 +183,6 @@ body {
   <p>"Best place to find good info about planes."</p>
   <hr class="rounded">
 </div>
-
-  /*test section
-   <div>
-      <h2>Leave a Comment:</h2>
-      <form action="/submit_comment" method="post" onsubmit="postComment(event);">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="comment">Comment:</label><br>
-        <textarea id="comment" name="comment" required></textarea><br>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-
-    <!-- Comment display section -->
-    <h2>Comments:</h2>
-    <div id="commentSection"></div>
-    /*test
     
   </body>
 </html>
