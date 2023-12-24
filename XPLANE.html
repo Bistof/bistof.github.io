@@ -104,11 +104,13 @@
           fetch('/comments')
             .then(response => response.json())
             .then(comments => comments.map(comment => `<p>${comment.name}: ${comment.text}</p>`).join(''))
-            .then(commentHTML => document.getElementById('commentSection').innerHTML += commentHTML)
+            .then(commentHTML => document.getElementById('commentSection').innerHTML = commentHTML) // Removed the '+' to replace comments rather than append
             .catch(console.error);
       }
 
-      window.onload = fetchComments;
+       window.onload = function() {
+        fetchComments(); // Call the function to fetch comments once the page loads
+      }
 
       function postComment(event) {
           event.preventDefault();
@@ -126,7 +128,7 @@
             },
           })
           .then(() => {
-            document.getElementById('commentSection').innerHTML += `<p>${comment.name}: ${comment.text}</p>`;
+            fetchComments(); // Fetch comments again after a new one has been posted, to preview it along with the previously posted ones
             event.target.reset();
           })
           .catch(console.error);
