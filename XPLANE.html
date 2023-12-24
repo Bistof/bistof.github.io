@@ -97,6 +97,43 @@
   animation: wiggle 2s infinite;
 }
 </style>
+
+    /*test
+    <script>
+      function fetchComments() {
+          fetch('/comments')
+            .then(response => response.json())
+            .then(comments => comments.map(comment => `<p>${comment.name}: ${comment.text}</p>`).join(''))
+            .then(commentHTML => document.getElementById('commentSection').innerHTML += commentHTML)
+            .catch(console.error);
+      }
+
+      window.onload = fetchComments;
+
+      function postComment(event) {
+          event.preventDefault();
+
+          const comment = {
+            name: event.target.name.value,
+            text: event.target.comment.value,
+          };
+
+          fetch('/submit_comment', {
+            method: 'POST',
+            body: JSON.stringify(comment),
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
+          .then(() => {
+            document.getElementById('commentSection').innerHTML += `<p>${comment.name}: ${comment.text}</p>`;
+            event.target.reset();
+          })
+          .catch(console.error);
+      }
+    </script>
+    /*test
+    
 <div class="navbar">
   <a href="https://bistof.github.io/XPLANE.html">Home</a>
   <a href="https://bistof.github.io/XPLANE-Recomends.html">Recomends</a>
@@ -155,14 +192,23 @@ body {
   <p>"Best place to find good info about planes."</p>
   <hr class="rounded">
 </div>
-    <div>
+
+  /*test section
+   <div>
       <h2>Leave a Comment:</h2>
-      <form action="/submit_comment" method="post">
+      <form action="/submit_comment" method="post" onsubmit="postComment(event);">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required><br>
         <label for="comment">Comment:</label><br>
         <textarea id="comment" name="comment" required></textarea><br>
         <input type="submit" value="Submit">
       </form>
+    </div>
+
+    <!-- Comment display section -->
+    <h2>Comments:</h2>
+    <div id="commentSection"></div>
+    /*test
+    
   </body>
 </html>
