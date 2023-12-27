@@ -1,0 +1,195 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='icon' href="X transparent.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  .rainbow {
+  animation: colorRotate 3s linear 0s infinite;
+}
+  body {
+  background-color: #1f242a;
+  color: white;
+  /* Add background image for more interesting look */
+  background-image: url('background_image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  30% {
+    color: #0099ff;
+  }
+  40% {
+    color: #00ff00;
+  }
+  55% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+.navbar {
+  overflow: hidden;
+  background-color: #2b2e31;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #1f2224;
+  border-radius: 10px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  background-color: #23272a;
+  border-radius: 10px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #404247;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1d2023;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #404247;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   10% { transform: rotate(10deg); }
+   20% { transform: rotate(-10deg); }
+   30% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+  
+.wiggle {
+  display: inline-block;
+  animation: wiggle 2s cubic-bezier(0.25, 0.76, 0.50, 0.96) infinite;
+}
+
+  button {
+        background-color: #34373b;
+        border: none;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        padding: 10px 24px;
+        border-radius: 12px;
+  }
+  
+  button:hover {
+        background-color: #404247; 
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+</style>
+    
+<div class="navbar">
+  <a href="https://bistof.github.io/XPLANE.html">Home</a>
+  <a href="https://bistof.github.io/XPLANE-Recomends.html">Recomends</a>
+  <b><a class="rainbow" href="https://www.buildai.space/app/xplane-ai-app">XPLANE-AI</a></b>
+  <div class="dropdown">
+    <button class="dropbtn">Planes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://bistof.github.io/XPLANE-B-2%20Spirit.html">B-2 Spirit <span class="badge wiggle">New</span></a>
+      <a href="https://bistof.github.io/XPLANE-V-22%20Osprey.html">V-22 Osprey </a>
+      <a href="https://bistof.github.io/XPLANE-Overture.html">Overture </a>
+      <a href="https://bistof.github.io/XPLANE-Concorde.html">Concorde </a>
+      <a href="https://bistof.github.io/XPLANE-Airbus%20A380.html">Airbus A380 </a>
+    </div>
+  </div>
+</div>
+    <link rel='icon' href="X transparent.png">
+   <a href="XPLANE.html">
+    <img width=20% src="XPLANE Logo white.png" />
+</a>
+<h1>Home</h1>
+    <title>XPLANE</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+</style>
+  </head>
+  <body>
+    <p>The best website to find planes explained! Let's explore together the fascinating world of aviation.</p>
+    <p><img width=20% src="XPLANE prototype.png" alt="X-Plane Prototype"></p>
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/B-2_Spirits_on_Deployment_to_Indo-Asia-Pacific.jpg/640px-B-2_Spirits_on_Deployment_to_Indo-Asia-Pacific.jpg" alt="B-2 Spirits on a mission">
+      <a href="https://bistof.github.io/XPLANE-B-2%20Spirit.html"><button>B-2 Spirit <span class="badge wiggle">New</span></button></a></p>
+    <p><img src="https://www.nationaldefensemagazine.org/-/media/sites/magazine/2021/04/200720-n-gr168-1206s.jpg" alt="V-22 Osprey in action">
+      <a href="https://bistof.github.io/XPLANE-V-22%20Osprey.html"><button>V-22 Osprey </button></a></p>
+      <p><img width=80% src="https://djsaviation.net/wp-content/uploads/2023/07/home-hero.jpg" alt="Overture in the skies">
+    <a href="XPLANE-Overture.html"><button>Overture </button></a></p>
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/British_Airways_Concorde_G-BOAC_03.jpg/800px-British_Airways_Concorde_G-BOAC_03.jpg" alt="Concorde taking off">
+    <a href="XPLANE-Concorde.html"><button>Concorde </button></a></p>
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg/640px-A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg" alt="Airbus A380 in flight">
+      <a href="XPLANE-Airbus%20A380.html"><button>Airbus A380 </button></a></p>
+     <div class="container"><hr class="rounded">
+  <img src="Petrified Shrimp.png" alt="Avatar" style="width:90px">
+  <p><b><span>Petrified Shrimp.</span></b> Petrified Shrimp the Youtuber.<a href="https://www.youtube.com/channel/UCN88cZbUFkmEWGpGJF_l9Pw"><img src="Youtube logo.png" alt="Youtube logo"></a></p>
+  <p>"The navigation is smooth and the info found here is reliable and precise. Best place to find good info about planes."</p>
+  <hr class="rounded">
+</div>
+    
+  </body>
+</html>
