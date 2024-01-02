@@ -1,4 +1,11 @@
-
+.container {
+  border-radius: 25px;
+  width: 492.5px;
+  height: 492.5px;
+  padding: 0px;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
   .rainbow {
   animation: colorRotate 3s linear 0s infinite;
 }
