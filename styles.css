@@ -3,8 +3,8 @@ img {
 }
 .container {
   border-radius: 25px;
-  width: 500px;
-  height: 500px;
+  width: 499px;
+  height: 499px;
   padding: 0px;
   border: 1px solid white;
   box-sizing: border-box;
