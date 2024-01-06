@@ -1,127 +1,137 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='icon' href="X transparent.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-      .rainbow {
-        animation: colorRotate 3s linear 0s infinite;
-      }
-      body {
-        background-color: #1f242a;
-        color: white;
-      }
+<meta name="google-site-verification" content="ZEEx26E3Z9G5p89q_L9qA418oV0ulJTNpyLaY-RKQJs" />
+<style>
+img {
+  border-radius: 25px;
+}
+.container {
+  border-radius: 25px;
+  width: 506px;
+  height: 506px;
+  padding: 0px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+  .rainbow {
+  animation: colorRotate 3s linear 0s infinite;
+}
+  body {
+  background-color: #1f242a;
+  color: white;
+}
 
-      @keyframes colorRotate {
-        from {
-          color: #6666ff;
-        }
-        30% {
-          color: #0099ff;
-        }
-        40% {
-          color: #00ff00;
-        }
-        55% {
-          color: #ff3399;
-        }
-        100% {
-          color: #6666ff;
-        }
-      }
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  30% {
+    color: #0099ff;
+  }
+  40% {
+    color: #00ff00;
+  }
+  55% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+.navbar {
+  overflow: hidden;
+  background-color: #34373b;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 25px;
+}
 
-      .navbar {
-        overflow: hidden;
-        background-color: #2b2e31;
-        font-family: Arial, Helvetica, sans-serif;
-        border-radius: 10px;
-      }
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #34373b;
+  border-radius: 25px;
+}
 
-      .navbar a {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        background-color: #1f2224;
-        border-radius: 10px;
-      }
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  background-color: #34373b;
+  border-radius: 25px;
+}
 
-      .dropdown .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit;
-        margin: 0;
-        background-color: #23272a;
-        border-radius: 10px;
-      }
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #404247;
+}
 
-      .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: #404247;
-      }
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #34373b;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 25px;
+}
 
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #1d2023;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        border-radius: 10px;
-      }
-      .dropdown-content a {
-        float: none;
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-        border-radius: 10px;
-      }
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 25px;
+}
 
-      .dropdown-content a:hover {
-        background-color: #404247;
-      }
+.dropdown-content a:hover {
+  background-color: #404247;
+}
 
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-      @keyframes wiggle {
-        0% { transform: rotate(0deg); }
-        10% { transform: rotate(10deg); }
-        20% { transform: rotate(-10deg); }
-        30% { transform: rotate(0deg); }
-        100% { transform: rotate(0deg); }
-      }
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   10% { transform: rotate(10deg); }
+   20% { transform: rotate(-10deg); }
+   30% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
 
-      @keyframes fadeIn {
-        to {
-          opacity: 1;
-        }
-      }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-      .wiggle {
-        display: inline-block;
-        animation: wiggle 2s cubic-bezier(0.25, 0.76, 0.50, 0.96) infinite;
-      }
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+  
+.wiggle {
+  display: inline-block;
+  animation: wiggle 2s cubic-bezier(0.25, 0.76, 0.50, 0.96) infinite;
+}
 
-      .fade-in {
-        animation: fadeIn 1s linear forwards;
-        opacity: 0;
-      }
-
-      button {
+  button {
         background-color: #34373b;
         border: none;
         color: #fff;
@@ -131,104 +141,76 @@
         transition-duration: 0.4s;
         cursor: pointer;
         padding: 10px 24px;
-        border-radius: 12px;
-      }
-
-      button:hover {
-        background-color: #404247;
+        border-radius: 25px;
+  }
+  
+  button:hover {
+        background-color: #404247; 
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-      }
-      
-      body {
-        overflow-x: hidden;
-      }
-
-      .container {
-        will-change: transform;
-      }
-
-    </style>
+  }
+  </style>
     <script>
-      window.addEventListener('scroll', function() {
-        // Gives each paragraph an offset based on how far down the page it is
-        var scroll = window.pageYOffset / (document.body.scrollHeight - window.innerHeight);
-        var offset = scroll * 100;
-
-        document.querySelectorAll('p').forEach(function(po, index) {
-          // Sets the delay to start the animation
-          var startOffset = (index * 100) / document.querySelectorAll('p').length;
-
-          if (offset >= startOffset) {
-            if (!po.classList.contains('fade-in')) {
-              po.classList.add('fade-in');
-            }
-          } else if (po.classList.contains('fade-in')) {
-            po.classList.remove('fade-in');
-          }
-        });
-      });
-    </script>
+window.embeddedChatbotConfig = {
+chatbotId: "l2Gr2W1pKuPwe24SolRbz",
+domain: "www.chatbase.co"
+}
+</script>
+<script
+src="https://www.chatbase.co/embed.min.js"
+chatbotId="l2Gr2W1pKuPwe24SolRbz"
+domain="www.chatbase.co"
+defer>
+</script>
     
-    <div class="navbar">
-      <a href="https://bistof.github.io/XPLANE.html">Home</a>
-      <a href="https://bistof.github.io/XPLANE-Recomends.html">Recomends</a>
-      <b><a class="rainbow" href="https://www.buildai.space/app/xplane-ai-app">XPLANE-AI</a></b>
-      <div class="dropdown">
-        <button class="dropbtn">Planes
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="https://bistof.github.io/XPLANE-B-2%20Spirit.html">B-2 Spirit <span class="badge wiggle">New</span></a>
-          <a href="https://bistof.github.io/XPLANE-V-22%20Osprey.html">V-22 Osprey </a>
-          <a href="https://bistof.github.io/XPLANE-Overture.html">Overture </a>
-          <a href="https://bistof.github.io/XPLANE-Concorde.html">Concorde </a>
-          <a href="https://bistof.github.io/XPLANE-Airbus%20A380.html">Airbus A380 </a>
-        </div>
-      </div>
+<div class="navbar">
+  <a href="https://bistof.github.io/XPLANE.html">Home</a>
+  <a href="https://bistof.github.io/XPLANE-Recomends.html">Recomends</a>
+  <b><a class="rainbow" href="https://bistof.github.io/X-AI.html">X-AI</a></b>
+  <div class="dropdown">
+    <button class="dropbtn">Planes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://bistof.github.io/XPLANE-B-2%20Spirit.html">B-2 Spirit <span class="badge wiggle">New</span></a>
+      <a href="https://bistof.github.io/XPLANE-V-22%20Osprey.html">V-22 Osprey </a>
+      <a href="https://bistof.github.io/XPLANE-Overture.html">Overture </a>
+      <a href="https://bistof.github.io/XPLANE-Concorde.html">Concorde </a>
+      <a href="https://bistof.github.io/XPLANE-Airbus%20A380.html">Airbus A380 </a>
     </div>
+  </div>
+  <form action="/search" style="float:right;">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</div>
     <link rel='icon' href="X transparent.png">
-     <a href="XPLANE.html">
-      <img width=20% src="XPLANE Logo white.png" />
-    </a>
-    <h1 class="fade-in">Home</h1>
-    <title>XPLANE test</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <a onclick="window.open('/Product/Product', 'popup', 'location=0,width=750,height=650,left=500,top=55'); return false;" class="btn btn-primary btn-sm">+</a>
-    <a href="javascript:window.open('document.aspx','mypopuptitle','width=600,height=400')">open popup</a>
-    <a href="#" onClick="MyWindow=window.open('http://www.google.com','MyWindow','width=600,height=300'); return false;">Click Here</a>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+   <a href="XPLANE.html">
+    <img width=20% src="XPLANE Logo white.png" />
+</a>
+<h1>Home</h1>
+    <title>XPLANE</title>
 
-      .badge {
-        background-color: red;
-        color: white;
-        padding: 4px 8px;
-        text-align: center;
-        border-radius: 5px;
-      }
-    </style>
   </head>
   <body>
-    <p class="fade-in">The best website to find planes explained!</p>
+    <p>The best website to find planes explained!</p>
     <p></p>
-    <p><img width=20% class="fade-in" src="XPLANE prototype.png"/></p>
+    <div class="container"> <a href="https://bistof.github.io/X-AI.html"><img src="Try Our NEW X-AI (1).png" /></a>  </div>
     <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/B-2_Spirits_on_Deployment_to_Indo-Asia-Pacific.jpg/640px-B-2_Spirits_on_Deployment_to_Indo-Asia-Pacific.jpg"/>
       <a href="https://bistof.github.io/XPLANE-B-2%20Spirit.html"><button>B-2 Spirit <span class="badge wiggle">New</span></button></a></p>
     <p><img src="https://www.nationaldefensemagazine.org/-/media/sites/magazine/2021/04/200720-n-gr168-1206s.jpg"/>
       <a href="https://bistof.github.io/XPLANE-V-22%20Osprey.html"><button>V-22 Osprey </button></a></p>
-    <p><img width=80% src="https://djsaviation.net/wp-content/uploads/2023/07/home-hero.jpg"/>
-      <a href="XPLANE-Overture.html"><button>Overture </button></a></p>
+      <p><img width=80% src="https://djsaviation.net/wp-content/uploads/2023/07/home-hero.jpg"/>
+    <a href="XPLANE-Overture.html"><button>Overture </button></a></p>
     <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/British_Airways_Concorde_G-BOAC_03.jpg/800px-British_Airways_Concorde_G-BOAC_03.jpg"/>
-      <a href="XPLANE-Concorde.html"><button>Concorde </button></a></p>
+    <a href="XPLANE-Concorde.html"><button>Concorde </button></a></p>
     <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg/640px-A6-EDY_A380_Emirates_31_jan_2013_jfk_%288442269364%29_%28cropped%29.jpg"/>
       <a href="XPLANE-Airbus%20A380.html"><button>Airbus A380 </button></a></p>
-     <div class="container"><hr class="rounded">
-      <img src="Petrified Shrimp.png" alt="Avatar" style="width:90px">
-      <p><b><span>Petrified Shrimp.</span></b> Petrified Shrimp the Youtuber.<a href="https://www.youtube.com/channel/UCN88cZbUFkmEWGpGJF_l9Pw"><img src="Youtube logo.png"/></a></p>
-      <p class="fade-in">"Best place to find good info about planes."</p>
-      <hr class="rounded">
-    </div>
+     <div><hr class="rounded">
+  <img src="Petrified Shrimp.png" alt="Avatar" style="width:90px">
+  <p><b><span>Petrified Shrimp.</span></b> Petrified Shrimp the Youtuber.<a href="https://www.youtube.com/channel/UCN88cZbUFkmEWGpGJF_l9Pw"><img src="Youtube logo.png"/></a></p>
+  <p>"Best place to find good info about planes."</p>
+  <hr class="rounded">
+</div>
+    
   </body>
 </html>
