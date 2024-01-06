@@ -36,7 +36,7 @@ img {
 }
 .navbar {
   overflow: hidden;
-  background-color: #2b2e31;
+  background-color: #34373b;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
 }
@@ -48,8 +48,8 @@ img {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: #1f2224;
-  border-radius: 10px;
+  background-color: #34373b;
+  border-radius: 25px;
 }
 
 .dropdown {
