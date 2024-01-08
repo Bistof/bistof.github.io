@@ -1,0 +1,164 @@
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 60px;
+}
+.content {
+  padding: 16px;
+}
+.logo-image{
+    width: 71px;
+    height: 27px;
+    border-radius: 5%;
+    overflow: hidden;
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+img {
+  border-radius: 25px;
+}
+.container {
+  border-radius: 25px;
+  width: 506px;
+  height: 506px;
+  padding: 0px;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+  .rainbow {
+  animation: colorRotate 3s linear 0s infinite;
+}
+  body {
+  background-color: #1f242a;
+  color: white;
+}
+
+@keyframes colorRotate {
+  from {
+    color: #6666ff;
+  }
+  30% {
+    color: #0099ff;
+  }
+  40% {
+    color: #00ff00;
+  }
+  55% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
+.navbar {
+  overflow: hidden;
+  background-color: #34373b;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 25px;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #34373b;
+  border-radius: 25px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  background-color: #34373b;
+  border-radius: 25px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #404247;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #34373b;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 25px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 25px;
+}
+
+.dropdown-content a:hover {
+  background-color: #404247;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+  @keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   10% { transform: rotate(10deg); }
+   20% { transform: rotate(-10deg); }
+   30% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.badge {
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+  
+.wiggle {
+  display: inline-block;
+  animation: wiggle 2s cubic-bezier(0.25, 0.76, 0.50, 0.96) infinite;
+}
+
+  button {
+        background-color: #34373b;
+        border: none;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        padding: 10px 24px;
+        border-radius: 25px;
+  }
+  
+  button:hover {
+        background-color: #404247; 
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
