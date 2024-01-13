@@ -1,15 +1,7 @@
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-.sticky + .content {
-  padding-top: 60px;
-}
-.content {
+.padding {
   padding: 16px;
 }
-.logo-image{
+.logo-image {
     width: 71px;
     height: 27px;
     border-radius: 5%;
