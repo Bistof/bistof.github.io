@@ -57,6 +57,7 @@ img {
   background-color: #34373b;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
+  padding-right: -284px;
 }
 
 .navbar a {
@@ -68,6 +69,7 @@ img {
   text-decoration: none;
   background-color: #34373b;
   border-radius: 25px;
+  padding-right: -284px;
 }
 
 .dropdown {
