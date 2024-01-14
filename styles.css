@@ -1,6 +1,7 @@
-.padding {
+.padding-container {
   padding: 16px;
-  background-color: #404247;
+  background-color: #32353B;
+  border-radius: 25px
 }
 .logo-image {
     width: 71px;
@@ -27,6 +28,7 @@ img {
   body {
   background-color: #1f242a;
   color: white;
+  padding: 16px
 }
 
 @keyframes colorRotate {
