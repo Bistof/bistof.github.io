@@ -6,9 +6,9 @@
 }
 .padding-container {
   padding: 16px;
-  background-color: #283039;
+  background-color: #34373b;
   border-radius: 25px;
-  border: 3px solid #203434;
+  border: 3px solid #34373b;
 }
 .logo-image {
     width: 71px;
@@ -148,7 +148,7 @@ body {
 }
 
   button {
-        background-color: #7589A2;
+        background-color: #34373b;
         border: none;
         color: #fff;
         text-align: center;
