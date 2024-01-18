@@ -85,6 +85,7 @@ img {
 .dropdown {
   float: left;
   overflow: hidden;
+  transition-duration: 0.4s;
 }
 
 .dropdown .dropbtn {
@@ -103,6 +104,7 @@ img {
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #404247;
+  transition-duration: 0.4s;
 }
 
 .dropdown-content {
@@ -128,10 +130,12 @@ img {
 
 .dropdown-content a:hover {
   background-color: #404247;
+  transition-duration: 0.4s;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  transition-duration: 0.4s;
 }
   
   @keyframes wiggle {
