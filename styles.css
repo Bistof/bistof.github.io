@@ -1,3 +1,11 @@
+.qa-badge {
+  border: 2px solid #51d675;
+  background-color: none;
+  color: #51d675;
+  padding: 2px 4px;
+  text-align: center;
+  border-radius: 5px;
+}
 .web-pad {
   padding-top: 16px;
   padding-right: 300px;
