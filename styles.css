@@ -1,3 +1,11 @@
+.plane-badge {
+  border: 2px solid #41a0e8;
+  background-color: none;
+  color: #41a0e8;
+  padding: 2px 4px;
+  text-align: center;
+  border-radius: 8px;
+}
 .qa-badge {
   border: 2px solid #51d675;
   background-color: none;
@@ -178,6 +186,6 @@ body {
   }
   
   button:hover {
-        background-color: #5E6A79; 
+        background-color: #404247; 
         box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
