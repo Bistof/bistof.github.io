@@ -16,6 +16,7 @@
   color: white;
   font-weight: bold;
   text-align: center;
+  border-radius: 20px;
 }
 .plane-badge {
   border: 2px solid #64afe8;
