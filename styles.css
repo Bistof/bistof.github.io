@@ -1,3 +1,22 @@
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
 .plane-badge {
   border: 2px solid #64afe8;
   background-color: none;
