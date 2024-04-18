@@ -75,19 +75,19 @@ img {
 
 @keyframes colorRotate {
   from {
-    color: #6666ff;
+    color: #03a9fc;
   }
   30% {
-    color: #0099ff;
+    color: #0373fc;
   }
-  40% {
-    color: #00ff00;
+  60% {
+    color: #fcc603;
   }
-  55% {
-    color: #ff3399;
+  90% {
+    color: #fc9803;
   }
   100% {
-    color: #6666ff;
+    color: #03a9fc;
   }
 }
 .navbar {
